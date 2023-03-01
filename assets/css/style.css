@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   gap: 10em;
   margin-top: 3em;
+  padding-right: 5em;
 }
 
 .greeting {
@@ -114,11 +115,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 6rem;
 }
 
-/* .avatar__image {
-  height: 120%;
-  width: 100%;
-  border-radius: 10%;
-} */
 .avatar__image {
   height: 310%;
   width: 300%;
@@ -160,6 +156,7 @@ h1, h2, h3, h4, h5, h6 {
   border-top-color: #F5F3F4;
   border-top-width: 2px;
   border-top-style: groove;
+  padding-right: 10em;
 }
 
 .container-main {
