@@ -1,18 +1,15 @@
-body{
+header {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0%;
+  padding: 14px;
+}
+
+body {
   color: #F5F3F4;
   background: #161A1D;
   font-family: "roboto", sans-serif;
-  font-size: 16px;
-  font-style: none;
-  line-height: 24px;
-  font-weight: 500;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: auto;
-  gap: 10em;
-  margin: auto;
+  margin: 0;
 }
 
 a {
@@ -27,22 +24,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   text-align: center;
   margin: auto;
-  width: fit-content;
-  text-decoration: none;
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.navbar ol {
-  list-style-type: none;
-  padding-left: 0;
-  border-bottom-color: #F5F3F4;
-  border-bottom-width: 1px;
-  border-bottom-style: groove;
-}
-
-.nav-crumb {
-  display: inline-block;
 }
 
 .nav-link {
@@ -54,32 +35,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
-  color: #B1A7A6;
+  color: #FFC600;
 }
 
-.intro {
+.container-main {
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.row-section {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: auto;
-  gap: 10em;
-  margin-top: 3em;
-  padding-right: 5em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  
 }
 
-.greeting {
-  position: relative;
-  align-self: left;
-  height: 400px;
-  width: 300px;
+.left-side {
+  flex: 50%;
+  text-align: center;
 }
+
+.right-side {
+  flex: 50%;
+}
+
+.header-section {
+  flex: 20%;
+}
+
+.details-section {
+  flex: 80%;
+}
+
 
 .h3-pop {
-  position: relative;
-  text-align: center;
-  width: 100px;
-  height: 22px;
-  padding-top: 4px;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 1%;
   color: #F5F3F4;
   background-color: #072AC8;
   border-top-left-radius: 20px;
@@ -88,18 +81,10 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-left-radius: 0px;
 }
 
-
-.h1-main, .h2-sub-heading {
-  text-align: center;
-  margin-left: none;
-  margin-right: auto;
-  width: 235px;
-  height: 30px;
-  padding-top: 5px;
-}
-
 .h2-sub-heading {
-  width: 250px;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 1%;
   background-color: #072AC8;
   border-top-left-radius: 0px;
   border-top-right-radius: 20px;
@@ -107,27 +92,12 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-left-radius: 20px;
 }
 
-.avatar {
+.avatar_image {
+  width: 16rem;
   border-radius: 50%;
-  align-items: center;
+  margin: 0 auto;
   justify-content: center;
-  height: 6rem;
-  width: 6rem;
-}
-
-.avatar__image {
-  height: 310%;
-  width: 300%;
-  border-radius: 50%;
-}
-
-.about {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: auto;
-  gap: 10em;
-  margin: auto;
+  display: block;
 }
 
 .dev-img {
@@ -138,17 +108,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .h2-about {
-  margin-left: none;
-  margin-right: auto;
-  width: 140px;
-  height: 30px;
-  padding-top: 5px;
-  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 1%;
   background-color: #072AC8;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+}
+
+.about-p2 {
+  margin: 0 auto;
+  width: 400px;
 }
 
 .container-border {
@@ -159,14 +131,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 10em;
 }
 
-.container-main {
-  display: inline;
-  justify-content: center;
-}
-
 .container-part {
   display: flex;
-  gap: 30px;
   margin-left: 10em;
 }
 
@@ -200,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 .container-h2-sub {
   margin-left: 120px;
   padding: auto;
-
+  
 }
 
 .container-h3 {
@@ -218,8 +184,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Projects */
 .projects {
   display: flex;
-  flex-direction: row;
   justify-content: right;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -241,16 +207,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Skills */
 .skill {
-  list-style-type: none;
-  position: relative;
   float: left;
-  /* background-color: var(--mainColor); */
   background-color: #FFC600;
   border-radius: 5%;
   color: #161A1D;
   padding: 1%;
   margin: 0.3% 0.5%;
-  /* color: var(--mainBackColor); */
 }
 
 .certificate {
@@ -283,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   width: 160px;
   height: 35px;
-  padding-top: 10px;
+  padding: 3px;
   text-align: center;
   background-color: #072AC8;
   border-top-left-radius: 0px;
