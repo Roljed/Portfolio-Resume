@@ -49,8 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro-pad {
   position: relative;
-  top: 50px;
-  margin-bottom: 50px;
+  top: 70px;
+  margin-bottom: 100px;
 }
 
 .container-main {
@@ -61,17 +61,10 @@ h1, h2, h3, h4, h5, h6 {
 .row-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.left-side {
-  flex: 50%;
+  justify-content:center;
+  gap: 80px;
   text-align: center;
-}
-
-.right-side {
-  flex: 50%;
+  padding: 10px;
 }
 
 .header-section {
@@ -86,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 .h3-pop {
   margin: 0 auto;
   width: fit-content;
-  padding: 1%;
+  padding: 2%;
   color: #F5F3F4;
   background-color: #072AC8;
   border-top-left-radius: 20px;
@@ -98,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 .h2-sub-heading {
   margin: 0 auto;
   width: fit-content;
-  padding: 1%;
+  padding: 2%;
   background-color: #072AC8;
   border-top-left-radius: 0px;
   border-top-right-radius: 20px;
@@ -124,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 .h2-about {
   margin: 0 auto;
   width: fit-content;
-  padding: 1%;
+  padding: 2%;
   background-color: #072AC8;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
