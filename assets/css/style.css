@@ -20,6 +20,15 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
 }
 
+.header {
+  position: fixed;
+  background-color: #212121;
+  top: 0px;
+  border-radius: 0%;
+  width: 100%;
+  z-index: 1;
+}
+
 .navbar {
   justify-content: space-between;
   text-align: center;
@@ -38,6 +47,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFC600;
 }
 
+.intro-pad {
+  position: relative;
+  top: 50px;
+  margin-bottom: 50px;
+}
+
 .container-main {
   justify-content: space-between;
   margin: 10px;
@@ -48,7 +63,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
-  
 }
 
 .left-side {
@@ -233,12 +247,21 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10%;
 }
 
+
+.footer {
+  position: fixed;
+  background-color: #212121;
+  bottom: 0px;
+  border-radius: 0%;
+  width: 100%;
+  z-index: 1;
+}
+
 /* Contact */
 .contact {
   display: block;
   justify-content: center;
   text-align: center;
-  padding-top: 1em;
 }
 
 .contact-h1 {
