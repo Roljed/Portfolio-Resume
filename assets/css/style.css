@@ -154,6 +154,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-h2 {
+  position: sticky;
+  top: 60px;
   color: #F5F3F4;
   margin-left: 5em;
   padding-top: 5px;
