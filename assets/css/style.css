@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 header {
   display: flex;
   flex-wrap: wrap;
@@ -8,16 +13,28 @@ header {
 body {
   color: #F5F3F4;
   background: #161A1D;
-  font-family: "roboto", sans-serif;
+  font-family: 'Oxygen', sans-serif;
   margin: 0;
-}
-
-a {
-  color: #809fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: fit-content;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 1em 0;
+  max-width: 90em;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .header {
@@ -153,6 +170,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 2em;
 }
 
+.container-col2-row {
+  display: flex;
+}
+
 .container-h2 {
   position: sticky;
   top: 60px;
@@ -190,15 +211,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #B1A7A6;
 }
 
+.textual {
+  border: 1px;
+  padding: 10px;
+}
+
+.textual:hover {
+  box-shadow: 0px 0px 10px gray;
+}
+
 /* Projects */
 .projects {
   display: flex;
-  justify-content: right;
   flex-wrap: wrap;
 }
 
 .card {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -225,9 +254,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .certificate {
-  list-style-type: none;
-  position: relative;
-  float: left;
   padding: 1%;
   margin: 0.3% 0.5%;
 }
@@ -240,6 +266,13 @@ h1, h2, h3, h4, h5, h6 {
 .certificate-coursera {
   width: 200px;
   border-radius: 10%;
+}
+
+.end-pad {
+  position: relative;
+  padding-top: 10px;
+  bottom: 110px;
+  margin-top: 110px;
 }
 
 
