@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
 }
 
+a {
+  text-decoration: none;
+}
+
 section {
   display: flex;
   flex-direction: row;
@@ -57,7 +61,6 @@ section {
   display: inline-block;
   text-align: center;
   padding: 5px;
-  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -168,6 +171,7 @@ section {
 .container-col2 {
   width: 50em;
   margin-left: 2em;
+  padding-top: 10px;
 }
 
 .container-col2-row {
@@ -191,12 +195,12 @@ section {
   padding-left: 5px;
   width: 180px;
   height: 30px;
+  margin-bottom: 10px;
 }
 
 .container-h2-sub {
   margin-left: 120px;
   padding: auto;
-  
 }
 
 .container-h3 {
@@ -227,10 +231,10 @@ section {
 }
 
 .card {
-  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
   width: 300px;
   height: 350px;
   padding-left: 5px;
