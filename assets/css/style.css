@@ -178,6 +178,17 @@ section {
   display: flex;
 }
 
+.container-col2-row ~ p {
+  display: inline-block;
+  text-align: center;
+  padding: 70px 0;
+}
+
+/* .container-col2-row > h3 {
+  text-align: center;
+  padding: 70px 0;
+} */
+
 .container-h2 {
   position: sticky;
   top: 60px;
@@ -218,6 +229,7 @@ section {
 .textual {
   border: 1px;
   padding: 10px;
+  width: 40em;
 }
 
 .textual:hover {
@@ -324,4 +336,11 @@ section {
   background-color: #FFC600;
   border-radius: 10%;
   margin: 0 auto;
+}
+
+.txt-certifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em 0 2em;
 }
